@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function displayValue(param1, param2, param3)
+{
+  this.param1=param1;	
+  this.param2=param2;
+}
+function displayValue1(param1,param2) 
+{
+ displayValue.call(this,param1,param2);
+}
+document.writeln(new displayValue1(13,"Shruti Patel").param2);
+</script>
+
+</body>
+</html>
